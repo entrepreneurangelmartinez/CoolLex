@@ -1,0 +1,13 @@
+-Esto es un comentario a comedido-
+*Este es otro que debe ignorarse*
+-100
+class Silly {
+copy() : SELF_TYPE { self };
+};
+class Sally inherits Silly { };
+class Main {
+x : Sally <- (new Sally).copy();
+main() : Sally { x };
+};
+""
+A2569a bn
